@@ -1,3 +1,8 @@
+variable "profile" {
+  type    = string
+  default = ""
+}
+
 terraform {
   required_providers {
     aws = {
