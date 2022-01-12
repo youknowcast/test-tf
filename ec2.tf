@@ -1,3 +1,7 @@
+locals {
+  example_instance_type = "t3.micro"
+}
+
 resource "aws_security_group" "example_ec2_sg" {
   name        = "example-ec2-sg"
   description = "EC2 Security Group"
@@ -47,7 +51,7 @@ resource "aws_security_group_rule" "example_ec2_out" {
 }
 
 resource "aws_instance" "example_ec2" {
-  instance_type = "t2.micro"
+  instance_type = local.example_instance_type
   ami           = "ami-02d36247c5bc58c23"
   subnet_id     = aws_subnet.example_subnet_a.id
   vpc_security_group_ids = [
