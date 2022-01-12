@@ -16,10 +16,27 @@ uninstall terraform if you installed with `brew install terraform`
 
 * tfsec
 
+it lists insecure code
+
 ```
 % brew install tfsec
+
+# use
+% tfsec
+```
+
+* git-secrets
+
+```
+% brew install git-secrets
+
+# setting
+% git secrets --register-aws --global
+% git secrets --install ~/.git-templates/git-secrets
+% git config --global init.templatedir '~/.git-templates/git-secrets'
 ```
 
 ## 参考にしたもの
 
 * SoftwareDesign 2022-01
+* 実践 Terraform AWS 設計におけるシステム設計とベストプラクティス
