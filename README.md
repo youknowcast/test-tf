@@ -1,4 +1,7 @@
 # test-tf
 
-my terraform branch for study.
+my terraform project for study.
 
+## 参考にしたもの
+
+* SoftwareDesign 2022-01
